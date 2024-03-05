@@ -18,6 +18,18 @@ Models compared:
 5. Mistral-7B-instruct-v0.2
 6. Phi-2
 
+
+RESULTS:
+```markdown
+| Model                         | Zero Shot Accuracy Overall | Zero Shot Accuracy 0 | Zero Shot Accuracy 1 | Zero Shot Accuracy 2 | Fine-Tuned Accuracy Overall | Fine-Tuned Accuracy 0 | Fine-Tuned Accuracy 1 | Fine-Tuned Accuracy 2 |
+|-------------------------------|----------------------------|----------------------|----------------------|----------------------|----------------------------|-----------------------|-----------------------|-----------------------|
+| gemma-2b-base                 | 0.564                      | 0.747                | 0.357                | 0.590                | 0.847                      | 0.913                 | 0.843                 | 0.783                 |
+| gemma-2b-it                   | 0.523                      | 0.907                | 0.490                | 0.173                | 0.871                      | 0.957                 | 0.867                 | 0.790                 |
+| gemma-7b-base                 | 0.671                      | 0.773                | 0.337                | 0.903                | 0.873                      | 0.923                 | 0.863                 | 0.833                 |
+| gemma-7b-it                   | 0.631                      | 0.803                | 0.193                | 0.897                | 0.886                      | 0.977                 | 0.877                 | 0.803                 |
+| Mistral-7b-instruction-v0.2   | 0.607                      | 0.693                | 0.957                | 0.170                | 0.873                      | 0.967                 | 0.893                 | 0.760                 |
+| Phi-2                         | 0.652                      | 0.793                | 0.203                | 0.953                | 0.858                      | 0.960                 | 0.793                 | 0.82
+
 Few takeaways from testing the models above:
 
 1. Out-of-box (zero shot) the models have a decent performance (~0.52 to 0.65).
