@@ -54,3 +54,9 @@ RESULTS:
 
     **Figure 4: Comparison of Individual Label Accuracy  of LLMs After Fine-tuning**
     ![alt text](https://github.com/toofanix/LLM_sentiment_analysis/blob/main/images/ft_label.png?raw=true)
+
+
+## Future things to check:
+- Gemma 2b models (base and it) seems to perform better on label 0, but not great on label 2. Review a few sample cases to understand why this is the case.
+- Gemma 7B models perform much better on the label 2 than the 2b models. Why is that the case? Can just the increase in number of paramters have such an effect on the accuracy of a label.
+- Test a dataset that has longer sentences. All the models tested here perform similarly well after fine-tuning. It could be that the dataset used here is very easy/simple. Testing on a more longer or "difficult" dataset may showcase the capability of larger models better.    
