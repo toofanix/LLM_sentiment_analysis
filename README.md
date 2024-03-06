@@ -52,5 +52,5 @@ RESULTS:
 
 4. The models perform better on all individual labels after fine-tuning. The 2b parameter models perform almost as good as the 7b parameter models on all the labels.
 
-    **Figure 3: Comparison of Individual Label Accuracy  of LLMs After Fine-tuning**
+    **Figure 4: Comparison of Individual Label Accuracy  of LLMs After Fine-tuning**
     ![alt text](https://github.com/toofanix/LLM_sentiment_analysis/blob/main/images/ft_label.png?raw=true)
