@@ -32,13 +32,25 @@ RESULTS:
 ```
 
 
-Few takeaways from testing the models above:
+## Few takeaways from testing the models above:
 
-1. Out-of-box (zero shot) the models have a decent performance (~0.52 to 0.65).
+1. Out-of-box (zero shot) the models have a decent performance (~0.52 to 0.65). The exception here is Phi-2 that performed similar to a 7b model out-of-box even though it is a smaller model.
 
     **Figure 1: Comparison of Overall Accuracy of LLMs Out-of-Box (Zero Shot)**
     ![alt text](https://github.com/toofanix/LLM_sentiment_analysis/blob/main/images/zs_overall.png?raw=true)
 
 2. The fine-tuned models perform significantly better (~0.84 to 0.89).
+
+    **Figure 2: Comparison of Overall Accuracy of LLMs
+    after Fine-tuning**
+    ![alt text](https://github.com/toofanix/LLM_sentiment_analysis/blob/main/images/ft_overall.png?raw=true)
+
 3. Different base models performance differently on the 3 classes. For example: `Gemma-2b-base` has an accuracy of 0.59 on class 2, but `Gemma-2b-it` performs worse at 0.173 on class 2. Seems, like if using a base model, different models should be tested before settling on the the one that works best for the task.
-4. The 7b paramters models (zero-shot and finetuned) perform better than the smaller models. The exception here is Phi-2 that performed similar to a 7b model out-of-box even though it is a smaller model.
+
+    **Figure 3: Comparison of Individual Label Accuracy  of LLMs Out-of-Box (Zero Shot)**
+    ![alt text](https://github.com/toofanix/LLM_sentiment_analysis/blob/main/images/zs_label.png?raw=true)
+
+4. The models perform better on all individual labels after fine-tuning. The 2b parameter models perform almost as good as the 7b parameter models on all the labels.
+
+    **Figure 3: Comparison of Individual Label Accuracy  of LLMs After Fine-tuning**
+    ![alt text](https://github.com/toofanix/LLM_sentiment_analysis/blob/main/images/ft_label.png?raw=true)
