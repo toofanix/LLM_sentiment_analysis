@@ -13,6 +13,7 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+data/
 .eggs/
 lib/
 lib64/
@@ -35,6 +36,9 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+# data
+*.csv
 
 # Unit test / coverage reports
 htmlcov/
